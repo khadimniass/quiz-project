@@ -1,1 +1,1 @@
-![image du quiz](https://www.markdownguide.org)
+![image du quiz]](/public/img/img-bg.jpg)
