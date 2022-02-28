@@ -1,1 +1,1 @@
-![image du quiz]](public/img/img-bg.jpg)
+![image du quiz](public/img/img-bg.jpg)
