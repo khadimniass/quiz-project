@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 if ($_SERVER['REQUEST_METHOD'] == "GET") {
     if (isset($_GET['action'])) {
         if ($_GET['action'] == "connexion") {
-            echo "charger la page de  connextion";
+            require_once(PATH_VIEWS.DIRECTORY_SEPARATOR."securite/connexion.html.php");
         }
     }
 }
