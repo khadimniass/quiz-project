@@ -5,14 +5,13 @@ function champ_obligatoire(string $key, string $data, array &$errors, string $me
         $errors[$key] = $message;
     }
 }
-function valid_email(string $key, string $data, array &$errors, string $message = "email
-invalid")
+function valid_email(string $key, string $data, array &$errors, string $message = "email invalid")
 {
     if (!filter_var($data, FILTER_VALIDATE_EMAIL)) {
         $errors[$key] = $message;
     }
 }
-function valid_password(string $key, string $data, array &$errors, string $message = "mot de pass doit contenir au moins un chiffre un majuscule et un minuscule")
+function valid_password(string $key, string $data, array &$errors, string $message = "mot de pass invalid")
 {
     if (!( strlen($data) == 8 && contain_minuscul($data)&& contain_majuscule($data)) ) {
         $errors[$key] = $message;

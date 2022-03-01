@@ -23,10 +23,10 @@ if (isset($_SESSION[KEY_ERRORS])) {
                 <input type="text" id="login" name="login" placeholder="login">
                 <i class="con-i-login"></i>
                 <!-- <small style="color: red;">Error message</small> -->
+            </div>
                 <?php if (isset($errors['login'])) : ?>
                     <p class="error"><?= $errors['login']  ?></p>
                 <?php endif ?>
-            </div>
 
             <div class="form-control">
                 <input type="password" id="password" name="password" placeholder="password">

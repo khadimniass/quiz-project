@@ -34,7 +34,7 @@ function connexion(string $login, string $password): void
     }
     champ_obligatoire("password", $password, $errors);
     if (!isset($errors['login'])) {
-        valid_password("password", $password, $errors);
+    #    valid_password("password", $password, $errors);
     }
     if (count($errors) == 0) {
         $userConnect = find_user_login_password($login, $password);
