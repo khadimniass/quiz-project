@@ -1,0 +1,136 @@
+body {
+  background-image: url("../img/img-bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+}
+body::before {
+  background-color: rgba(185, 171, 171, 1);
+}
+.con-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #fff;
+}
+.con-container {
+  /* display: flex; */
+  width: 40%;
+  min-height: 35vh;
+  background-color: #fff;
+}
+.con-div-header {
+  background-color: #44c8dd;
+}
+.con-form-header {
+  width: 90%;
+  margin: auto;
+  height: 8vh;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con-form-header div {
+  height: 15px;
+  background-color: white;
+  width: 15px;
+  clip-path: polygon(
+    20% 0%,
+    0% 20%,
+    30% 50%,
+    0% 80%,
+    20% 100%,
+    50% 70%,
+    80% 100%,
+    100% 80%,
+    70% 50%,
+    100% 20%,
+    80% 0%,
+    50% 30%
+  );
+}
+.con-form-header h3 {
+  margin-top: 0;
+}
+.con-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: center; */
+  width: 100%;
+  margin: 5%;
+  height: 35vh;
+}
+.con-form input {
+  height: 100%;
+  width: 90%;
+  background-color: #D7DBDD;
+  border: none;
+}
+.con-form button {
+  color: #fff;
+  width: 12vw;
+  height: 4.5vh;
+  background-color: #44c8dd;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.con-i-login {
+  height: 38px;
+  width: 38px;
+  background-image: url("../img/icone/ic-login.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.con-i-pwd {
+  height: 38px;
+  width: 38px;
+  background-image: url("../img/icone/padlock.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 8vh;
+  border: 1px solid gray;
+  background-color: #D7DBDD;
+}
+.con-link{
+  display: flex;
+  align-items: center;
+}
+.con-link a{
+  text-decoration: none;
+  color: #CACFD2;
+  margin-left: 20px;
+  height: 100%;
+  border-radius: 5px;
+}
+.con-link a:hover{
+  background-color: #44c8dd;
+  color: #fff;
+}
+header{
+  /* padding-top: 0; */
+  height: 10vh;
+  display: flex;
+  width: 100%;
+  background-color: #072b2e ;
+  color: #fff;
+}
+.logo{
+  height: 100%;
+  flex: 1;
+}
+.con-txt{
+flex: 9;
+display: flex;
+justify-content: center;
+align-items: center;
+}

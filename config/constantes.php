@@ -1,17 +1,19 @@
 <?php
+
 /**
  * Chemin sur dossier racine du projet
  */
 define("ROOT", str_replace("public" . DIRECTORY_SEPARATOR . "index.php", "", $_SERVER['SCRIPT_FILENAME']));
 
 /**
- * Chemin sur dossier src qui contient les controllers et les modeles
- */
+* Chemin sur dossier src qui contient les controllers et les modeles
+*/
+
 define("PATH_SRC", ROOT . "src" . DIRECTORY_SEPARATOR);
 
 /**
  * Chemin sur dossier templates du projet
- */
+*/
 define("PATH_VIEWS", ROOT . "templates" . DIRECTORY_SEPARATOR);
 
 /**
@@ -24,7 +26,24 @@ define("PATH_DB", ROOT . "data/db.json");
  */
 define("WEBROOT", str_replace("index.php", "", $_SERVER['SCRIPT_NAME']));
 
+
 /**
  * Chemin sur l'action des formulaires
+*/
+
+/**
+ * stockage des erreurs
  */
-define("PATH_POST", "http://localhost:8000");
+define("KEY_ERRORS", "errors");
+
+/**
+ * cle d'acces a l'utilisateur connecté
+ */
+define("USER_KEY", "user-connect");
+
+/**
+ * definir l'URL du projet 
+ */
+// define("PATH_POST", "http://localhost:8000");
+
+

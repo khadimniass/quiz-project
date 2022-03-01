@@ -11,6 +11,9 @@ error_reporting(E_ALL);
 //inclusion des constantes
 require_once dirname(dirname(__FILE__)) . "/config/constantes.php";
 
+//charger l'entete de toutes les pages
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."_header.htm.php"); 
+
 //inclusion du Validator
 require_once dirname(dirname(__FILE__)) . "/config/validator.php";
 
@@ -20,8 +23,12 @@ require_once dirname(dirname(__FILE__)) . "/config/orm.php";
 //inclusion des roles
 require_once dirname(dirname(__FILE__)) . "/config/role.php";
 
+
 //Chargement du router
-require_once dirname(dirname(__FILE__)) . "/config/router.php";
+require_once dirname(dirname(__FILE__)) . "/config/router.php"; //a charger dernierement
 /*
 **tester les variables declarer
 */
+
+//charger le footer
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."_footer.htm.php"); 
