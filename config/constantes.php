@@ -41,6 +41,12 @@ define("KEY_ERRORS", "errors");
  */
 define("USER_KEY", "user-connect");
 
+
+
+
+// define("USER_KEY", "user_connect");
+define("ROLE_JOUEUR", "ROLE_JOUEUR");
+define("ROLE_ADMIN", "ROLE_ADMIN");
 /**
  * definir l'URL du projet 
  */

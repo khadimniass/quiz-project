@@ -11,7 +11,7 @@ function valid_email(string $key, string $data, array &$errors, string $message 
         $errors[$key] = $message;
     }
 }
-function valid_password(string $key, string $data, array &$errors, string $message = "mot de pass invalid")
+function valid_password(string $key, string $data, array &$errors, string $message = "mot de pass doit contenir au moins un chiffre un majuscule et un minuscule")
 {
     if (!( strlen($data) == 8 && contain_minuscul($data)&& contain_majuscule($data)) ) {
         $errors[$key] = $message;

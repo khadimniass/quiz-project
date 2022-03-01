@@ -33,7 +33,7 @@ function connexion(string $login, string $password): void
         valid_email("login", $login, $errors);
     }
     champ_obligatoire("password", $password, $errors);
-    if (!isset($errors['login'])) {
+    if (!isset($errors['password'])) {
     #    valid_password("password", $password, $errors);
     }
     if (count($errors) == 0) {

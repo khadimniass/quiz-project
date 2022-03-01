@@ -12,7 +12,10 @@ error_reporting(E_ALL);
 require_once dirname(dirname(__FILE__)) . "/config/constantes.php";
 
 //charger l'entete de toutes les pages
-require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."_header.htm.php"); 
+require_once(PATH_VIEWS."include".DIRECTORY_SEPARATOR."_header.htm.php");  
+
+
+//charger le menu du sidebar
 
 //inclusion du Validator
 require_once dirname(dirname(__FILE__)) . "/config/validator.php";
